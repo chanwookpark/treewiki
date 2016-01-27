@@ -406,9 +406,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .hide-for-print{display:none!important}
 .show-for-print{display:inherit!important}}
 
-#nav{max-width:100%;background-color:#000;padding:0.4em;}
-#nav-text{color:rgba(255,255,255,.8);line-height:1.44;font-size: 14px;}
-#nav-text ul {list-style-type: none; margin: 0; padding: 0; text-align: center;}
-#nav-text ul li {display: inline;}
-#nav-text ul li a{text-decoration: none;color:#CCC; padding: .2em 0.5em;}
-#nav-text ul li a:hover{color:#FFF;text-decoration: underline;}
+/* Nav-bar  */
+#nav{background-color:#000;padding:0.4em;max-width: 62.5em;margin: auto;}
+.nav-text{color:rgba(255,255,255,.8);line-height:1.44;font-size: 14px;}
+.nav-text ul {list-style-type: none; margin: 0; padding: 0;}
+.nav-text ul li {display: inline;}
+.nav-text ul li a{text-decoration: none;color:#CCC; padding: .2em 0.5em;}
+.nav-text ul li a:hover{color:#FFF;text-decoration: underline;}
+#header.nav-text-header {padding:0;margin:0;}
+.nav_wrap{max-width:100%;background-color:#000;}
+/* Nav-bar  */
