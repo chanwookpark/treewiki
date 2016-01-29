@@ -170,8 +170,8 @@ body.toc2.toc-right{padding-left:0;padding-right:20em}}
 #content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
 #content #toc>:first-child{margin-top:0}
 #content #toc>:last-child{margin-bottom:0}
-#footer{max-width:100%;background-color:#000;padding:1em}
-#footer-text{color:rgba(255,255,255,.8);line-height:1.44;font-size: 14px;}
+#footer{max-width:100%;background-color:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
 .sect1{padding-bottom:.625em}
 @media only screen and (min-width:768px){.sect1{padding-bottom:1.25em}}
 .sect1+.sect1{border-top:1px solid #efefed}
@@ -405,6 +405,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .print-only{display:block!important}
 .hide-for-print{display:none!important}
 .show-for-print{display:inherit!important}}
+
 
 /* Nav-bar  */
 #nav{background-color:#000;padding:0.4em;max-width: 62.5em;margin: auto;}
