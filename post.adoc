@@ -10,8 +10,8 @@ Chanwook Park <chanwook.god@gmail.com>
 
 == Spring Framework
 
-- https://s3-ap-northeast-1.amazonaws.com/treewiki/spring/oauth2-spring-dev-guide.html[OAuth 2 개발자 가이드 (번역)]
+- spring/oauth2-spring-dev-guide.html[OAuth 2 개발자 가이드 (번역)]
 
 == Microservice Architecture
 
-- https://s3-ap-northeast-1.amazonaws.com/treewiki/microservice/microservice-trade-off.html[마이크로서비스의 비용과 혜택(번역)]
+- microservice/microservice-trade-off.html[마이크로서비스의 비용과 혜택(번역)]
