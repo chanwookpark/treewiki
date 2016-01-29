@@ -1,4 +1,4 @@
-= 마이크로서비스 트레이드오프 : 마이크로서비스의 비용과 혜택
+= 마이크로서비스의 비용과 혜택
 Chanwook Park <chanwook.god@gmail.com>
 :revnumber: 1.0
 :revdate: 2016-01-29
