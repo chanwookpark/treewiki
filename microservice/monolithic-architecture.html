@@ -259,28 +259,10 @@
   </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="../resource/treewiki.js"></script>
 <script>
 (function() {
-  var api   = "http://localhost:9901/tag/search";
-  var currentHref   = window.location.href;
-  var title = $('#header h1').text();
-
-  $.getJSON( api, {
-    title: title,
-    href: currentHref,
-    tags: "마이크로서비스 아키텍처"
-  })
-    .done(function( json ) {
-        console.log(JSON.stringify(json));
-        var ul = $('#taglink div div ul')
-
-        $.each(json._embedded.tag, function(index, taglink){
-          console.log(index + " : " + taglink.title + ":" + taglink.href + ":" + taglink.tag);
-
-          var li = $('<li/>').appendTo(ul);
-          var a = $('<a>').attr('href', taglink.href).text(taglink.title).appendTo(li);
-        });
-    });
+  renderTagLink();
 })();
 </script>
 <!-- TagLink -->
@@ -293,7 +275,7 @@
     data-width="970"
     data-show-faces="true">
   </div>
-  <div class="fb-comments" data-href="https://s3-ap-northeast-1.amazonaws.com/treewiki/oauth2-spring-dev-guide.html#경로바꾸자" data-width="970" data-numposts="5"></div>
+  <div class="fb-comments" data-href="https://treewiki.s3.amazonaws.com/microservice/monolithic-architecture.html" data-width="970" data-numposts="5"></div>
 </div>
 <!-- FB -->
 </div>
