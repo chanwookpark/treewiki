@@ -12,8 +12,13 @@ function renderTagLink(tag) {
     tags: tag
   })
     .done(function( json ) {
+        if(json._embedded == undefined) {
+          console.log('Tag is empty!!');
+          return;
+        }
+
         console.log(JSON.stringify(json));
-        var ul = $('#taglink div div ul')
+        var ul = $('#taglink div div ul');
 
         $.each(json._embedded.tag, function(index, taglink){
           console.log(index + ':' + taglink.title + ':' + taglink.href + ':' + taglink.tag);
