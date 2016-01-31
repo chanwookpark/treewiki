@@ -248,6 +248,43 @@
 </div>
 </div>
 </div>
+
+<!-- TagLink -->
+<div id="taglink" class="sect1">
+  <h2 id="_관련_글">관련글</h2>
+  <div class="sectionbody">
+    <div class="paragraph">
+      <ul></ul>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>
+(function() {
+  var api   = "http://localhost:9901/tag/search";
+  var currentHref   = window.location.href;
+  var title = $('#header h1').text();
+
+  $.getJSON( api, {
+    title: title,
+    href: currentHref,
+    tags: "마이크로서비스 아키텍처"
+  })
+    .done(function( json ) {
+        console.log(JSON.stringify(json));
+        var ul = $('#taglink div div ul')
+
+        $.each(json._embedded.tag, function(index, taglink){
+          console.log(index + " : " + taglink.title + ":" + taglink.href + ":" + taglink.tag);
+
+          var li = $('<li/>').appendTo(ul);
+          var a = $('<a>').attr('href', taglink.href).text(taglink.title).appendTo(li);
+        });
+    });
+})();
+</script>
+<!-- TagLink -->
+
 <!-- FB -->
 <div class="sect1">
   <div
@@ -266,6 +303,7 @@ Version 1.0<br>
 Last updated 2016-01-30 15:33:48 KST
 </div>
 </div>
+
 <!-- GA -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
