@@ -15,3 +15,4 @@ Chanwook Park <chanwook.god@gmail.com>
 == Microservice Architecture
 
 - microservice/microservice-trade-off.html[마이크로서비스의 비용과 혜택(번역)]
+- microservice/monolithic-architecture.html[모놀리틱 아키텍처(번역)]
