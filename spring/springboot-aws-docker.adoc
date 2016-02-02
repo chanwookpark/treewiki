@@ -1,0 +1,32 @@
+= Spring Boot 애플리케이션을 AWS EC2 + Docker 환경에서 실행하기
+
+가장 간단한 방법으로 돌려보기까지 과정을 간단히 기록.
+
+== Spring Boot APP 개발
+일반적인 Boot APP 개발. 내가 배포한 서비스는 여기에 Data Mongo 등을 추가함.
+임베디드 톰캣을 사용하며, 포트를 직접 지정하자.
+특별한 건 업다.
+
+== Docker 설정
+
+일단 dockerfile을 생성함.
+그리고 pom.xml에 빌드를 위한 플러그인 설정.
+그리고 로컬 환경에 docker 설치. 이건 각자 운영체제에 맞춰서 설치하면 됨.
+그 다음 로컬에서 실행하는 커맨드 정리 (이건 그린크래용 참고)
+다커허브에 저장소를 만들고 여기에 이미지를 푸쉬함..
+
+== EC2에 docker 설정
+일단 EC2 인스턴스 생성
+그리고 설정. 이건 aws 문서 참조.
+http://docs.aws.amazon.com/ko_kr/AmazonECS/latest/developerguide/docker-basics.html
+
+sudo를 붙이자.
+이미지를 가지고 와서 빌드 실행. 아래 커맨드 참조.
+
+[ec2-user@ip-172-31-18-74 ~]$ sudo docker run --name taglink -p 80:9901 -e "SPRING_PROFILES_ACTIVE=docker" -e "spring.data.mongodb.password=1234" -t chanwook/taglink
+
+중지할 때 드으이 커맨드 확인
+
+그리고 security group에서 조정해죽
+
+== 테스트 ok!

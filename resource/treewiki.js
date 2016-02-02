@@ -2,7 +2,8 @@
 * 태그의 링크를 화면에 노출하는 함수
 */
 function renderTagLink(tag) {
-  var api   = 'http://localhost:9901/tag/search';
+  //var api   = 'http://localhost:9901/tag/search';
+  var api = 'http://ec2-52-79-81-202.ap-northeast-2.compute.amazonaws.com/tag/search';
   var currentHref   = window.location.href;
   var title = $('#header h1').text();
 
