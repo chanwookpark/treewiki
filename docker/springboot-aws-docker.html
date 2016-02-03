@@ -49,11 +49,11 @@
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_spring_boot_애플리케이션에_docker_설정">Spring Boot 애플리케이션에 Docker 설정</a></li>
+<li><a href="#_spring_boot_애플리케이션에_docker_설정">Spring Boot 애플리케이션에 Docker 설정하기</a></li>
 <li><a href="#_로컬환경에서_docker_빌드하기">로컬환경에서 Docker 빌드하기</a></li>
-<li><a href="#_dockerhub로_푸쉬_push_하기">DockerHub로 푸쉬(push)하기</a></li>
-<li><a href="#_ec2에_docker_설치">EC2에 Docker 설치</a></li>
-<li><a href="#_ec2에서_이미지를_가져와_실행하기">EC2에서 이미지를 가져와 실행하기</a></li>
+<li><a href="#_dockerhub로_푸쉬_push_하기">DockerHub로 이미지 푸쉬(push)하기</a></li>
+<li><a href="#_ec2에_docker_설치">EC2에 Docker 설치하기</a></li>
+<li><a href="#_ec2에서_이미지를_가져와_실행하기">EC2에서 이미지를 가져와(pull) 실행하기</a></li>
 <li><a href="#_마무리">마무리</a></li>
 <li><a href="#_참조">참조</a></li>
 </ul>
@@ -69,7 +69,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_spring_boot_애플리케이션에_docker_설정">Spring Boot 애플리케이션에 Docker 설정</h2>
+<h2 id="_spring_boot_애플리케이션에_docker_설정">Spring Boot 애플리케이션에 Docker 설정하기</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Docker를 사용하기 위해서는 1)docker 메이븐 플러그인과 2)dockerfile을 추가하면 됩니다.</p>
@@ -178,7 +178,7 @@ java                8                   a3405db8ea92        38 hours ago        
 </div>
 </div>
 <div class="sect1">
-<h2 id="_dockerhub로_푸쉬_push_하기">DockerHub로 푸쉬(push)하기</h2>
+<h2 id="_dockerhub로_푸쉬_push_하기">DockerHub로 이미지 푸쉬(push)하기</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>이제는 <a href="https://hub.docker.com">DockerHub</a>로 이미지를 푸쉬하겠습니다.</p>
@@ -205,7 +205,7 @@ java                8                   a3405db8ea92        38 hours ago        
 </div>
 </div>
 <div class="sect1">
-<h2 id="_ec2에_docker_설치">EC2에 Docker 설치</h2>
+<h2 id="_ec2에_docker_설치">EC2에 Docker 설치하기</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>우선 EC2 인스턴스가 있어야겠지요.</p>
@@ -247,7 +247,7 @@ $ docker info (로 확인!)</pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_ec2에서_이미지를_가져와_실행하기">EC2에서 이미지를 가져와 실행하기</h2>
+<h2 id="_ec2에서_이미지를_가져와_실행하기">EC2에서 이미지를 가져와(pull) 실행하기</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>이제 마지막 단계입니다. DockerHub에 올라가 있는 이미지를 가지고 오도록 하겠습니다(pull).</p>

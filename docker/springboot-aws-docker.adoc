@@ -11,7 +11,7 @@ Chanwook Park <chanwook.god@gmail.com>
 Spring Boot로 개발한 간단한 서비스를 AWS EC2에 올리고 싶었고, 가장 간단한 방법을 찾는 중에 Docker를 사용해 올리게 됐습니다.
 이번 글은 Docker를 사용해 Spring Boot 애플리케이션을 EC2에 올리고 실행하는 방법을 설명합니다.
 
-== Spring Boot 애플리케이션에 Docker 설정
+== Spring Boot 애플리케이션에 Docker 설정하기
 Docker를 사용하기 위해서는 1)docker 메이븐 플러그인과 2)dockerfile을 추가하면 됩니다.
 
 먼저 메이븐 플러그인은 아래처럼 설정을 추가하면 됩니다.
@@ -95,7 +95,7 @@ chanwook/taglink    latest              dacd1fb3a4fe        About a minute ago  
 java                8                   a3405db8ea92        38 hours ago         642.3 MB
 ----
 
-== DockerHub로 푸쉬(push)하기
+== DockerHub로 이미지 푸쉬(push)하기
 이제는 https://hub.docker.com[DockerHub]로 이미지를 푸쉬하겠습니다.
 
 처음 실행이라면 콘솔에서 docker 로그인이 필요합니다. id/password/email을 입력하면 됩니다.
@@ -112,7 +112,7 @@ $ docker push {저장소}/{이미지ID}
 
 DockerHub에서 만든 계정의 기본 저장소를 사용하거나 저장소를 만들어줄 수가 있습니다.
 
-== EC2에 Docker 설치
+== EC2에 Docker 설치하기
 우선 EC2 인스턴스가 있어야겠지요.
 
 EC2 인스턴스는 쉽게 AWS 콘솔 상에서 만들 수가 있습니다. 실행하고 나서는 SSH로 접속을 합니다. 방법은 AWS 콘솔에 쉽게 잘 설명이 되어 있습니다.
@@ -136,7 +136,7 @@ WARNING: '주의!'라고 적힌 명령어를 실행하고 나서는 반드시 ss
 
 
 
-== EC2에서 이미지를 가져와 실행하기
+== EC2에서 이미지를 가져와(pull) 실행하기
 이제 마지막 단계입니다. DockerHub에 올라가 있는 이미지를 가지고 오도록 하겠습니다(pull).
 
 ----
