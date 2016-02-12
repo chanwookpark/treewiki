@@ -7,6 +7,7 @@ Chanwook Park <chanwook.god@gmail.com>
 :source-highlighter: coderay
 :linkcss:
 :stylesdir: resource
+:nofooter:
 
 == Spring Framework
 
@@ -15,7 +16,8 @@ Chanwook Park <chanwook.god@gmail.com>
 == Microservice Architecture
 
 - http://microservice/microservice-trade-off.html[마이크로서비스의 비용과 혜택(번역)]
-- http://microservice/monolithic-architecture.html[모놀리틱 아키텍처(번역)]
+- http://microservice/monolithic-architecture.html[모놀리틱 아키텍처 by Chris Richardson(번역)]
+- http://microservice/microservice-architecture-chris.html[마이크로서비스 아키텍처 by Chris Richardson(번역)]
 
 == Docker
 

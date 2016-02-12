@@ -9,8 +9,8 @@ Chanwook Park <chanwook.god@gmail.com>
 :stylesdir: ../resource
 
 
-> "This a translation of an article http://microservices.io/patterns/monolithic.html[Monolithic Architecture] originally written and copyrighted by http://twitter.com/crichardson[Chris Richardson]." +
-> "이글은 http://twitter.com/crichardson[Chris Richardson]가 작성하였으며, 저작권을 가지고 있는 http://microservices.io/patterns/monolithic.html[Monolithic Architecture] 글의 번역본입니다.
+"This a translation of an article http://microservices.io/patterns/monolithic.html[Monolithic Architecture] originally written and copyrighted by http://twitter.com/crichardson[Chris Richardson]." +
+"이글은 http://twitter.com/crichardson[Chris Richardson]가 작성하였으며, 저작권을 가지고 있는 http://microservices.io/patterns/monolithic.html[Monolithic Architecture] 글의 번역본입니다.
 
 == 정보
 
