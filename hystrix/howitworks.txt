@@ -1,0 +1,21 @@
+= 히스트릭스는 어떻게 동작하는가 
+
+원문: https://github.com/Netflix/Hystrix/wiki/How-it-Works#flow1 
+
+== 흐름도 
+다음 다이어그램은 서비스 의존성에 대한 호출이 발생할 때 히스트릭스에 의해서 무슨 일이 일어나는지를 보여준다. 
+
+https://github.com/Netflix/Hystrix/wiki/images/hystrix-command-flow-chart.png
+
+ 다음 절에서 이 흐름에 대해 아주 상세하게 설명할 것이다: 
+ 
+1. HystrixCommand나 HystrixObservableCommand 객체 구성하기 
+2. 커맨드 실행하기 
+3. 응답을 캐시할 것인가? 
+4. 써킷(Circuit)이 열렸는가? 
+5. 쓰레드 풀(Thread Pool)/큐(Queue)/세마포어(Semaphore)가 가득찾는가? 
+6. HystrixObservableCommand.construct() 또는 HystrixCommand.run()
+7. 써킷 상태(health) 추정하기 
+8. 폴백 획득하기 (get인데..)
+9. 성공적인 응답 반환하기 
+
