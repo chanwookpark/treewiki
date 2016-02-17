@@ -405,3 +405,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .print-only{display:block!important}
 .hide-for-print{display:none!important}
 .show-for-print{display:inherit!important}}
+
+/* Nav-bar  */
+#nav{background-color:#dd5136;padding:0.4em;max-width: 62.5em;margin: auto;}
+.nav-text{line-height:1.44;font-size: 16px;text-decoration: bold;}
+.nav-text ul {list-style-type: none; margin: 0; padding: 0;}
+.nav-text ul li {display: inline;}
+.nav-text ul li a{text-decoration: none;color:#FFF; padding: .2em 0.5em;}
+.nav-text ul li a:hover{color:#FFF;text-decoration: underline;}
+#header.nav-text-header {padding:0;margin:0;}
+.nav_wrap{max-width:100%;background-color:#dd5136;}
+/* Nav-bar  */

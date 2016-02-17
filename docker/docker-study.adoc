@@ -1,0 +1,9 @@
+= Docker 학습
+
+== 에러 상황 별 대응
+
+=== Cannot connect to the Docker daemon. Is the docker daemon running on this host?
+
+$ docker-machine start default
+
+기본 Docker 데몬 실행 
